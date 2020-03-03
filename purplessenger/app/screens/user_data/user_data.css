@@ -1,0 +1,77 @@
+@media (min-width: 1441px) {
+  .dados_usuario {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .dados_usuario {
+    width: 30%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .dados_usuario {
+    width: 65%;
+  }
+}
+
+.dados_usuario {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fff;
+}
+
+.menu_dados_usuario {
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding-right: 20px;
+  padding-left: 24px;
+  height: 59px;
+  background: #ededed;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-right: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.icone_fechar_menu_dados_usuario {
+  flex: none;
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.menu_dados_usuario span {
+  margin-top: -4px;
+  font-size: 16px;
+  color: #000;
+  user-select: none;
+}
+
+.caixa_um_dados_usuario {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  padding: 28px 30px 19px;
+}
+
+.segura_perfil_caixa_um_dados_usuario {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.perfil_segura_perfil_caixa_um_dados_usuario {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  background: #ededed;
+  background-position: 50%;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+}

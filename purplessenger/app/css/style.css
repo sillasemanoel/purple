@@ -1,0 +1,237 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  color: #4a4a4a;
+  overflow-y: overlay;
+}
+
+body::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url("../fonts/coolvetica/coolveticarg.ttf");
+}
+
+@media (min-width: 1441px) {
+  .chat {
+    top: 19px;
+    left: calc(50% - 698px);
+    max-width: 1396px;
+    width: calc(100% - 50px);
+    height: calc(100% - 38px);
+  }
+
+  .chat_esquerdo_absolute_normal_aplica {
+    width: 30%;
+  }
+
+  @keyframes chat_esquerdo_absolute_normal_aplica_correndo {
+    0%,
+    30% {
+      width: calc(30% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 30%;
+      opacity: 1;
+    }
+  }
+
+  .chat_esquerdo_absolute_menor_aplica {
+    width: 25%;
+  }
+
+  @keyframes chat_esquerdo_absolute_menor_aplica_correndo {
+    0%,
+    30% {
+      width: calc(25% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 25%;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1440px) {
+  .tarja_roxa {
+    display: none;
+  }
+
+  .tarja_cinza {
+    display: none;
+  }
+
+  .chat {
+    width: 100%;
+    height: 100%;
+  }
+
+  .chat_esquerdo_absolute_normal_aplica {
+    width: 30%;
+  }
+
+  @keyframes chat_esquerdo_absolute_normal_aplica_correndo {
+    0%,
+    30% {
+      width: calc(30% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 30%;
+      opacity: 1;
+    }
+  }
+
+  .chat_esquerdo_absolute_menor_aplica {
+    width: 25%;
+  }
+
+  @keyframes chat_esquerdo_absolute_menor_aplica_correndo {
+    0%,
+    30% {
+      width: calc(25% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 25%;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1300px) {
+  .chat_esquerdo_absolute_normal_aplica {
+    width: 35%;
+  }
+
+  @keyframes chat_esquerdo_absolute_normal_aplica_correndo {
+    0%,
+    30% {
+      width: calc(35% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 35%;
+      opacity: 1;
+    }
+  }
+
+  .chat_esquerdo_absolute_menor_aplica {
+    width: 30%;
+  }
+
+  @keyframes chat_esquerdo_absolute_menor_aplica_correndo {
+    0%,
+    30% {
+      width: calc(30% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 30%;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .chat_esquerdo_absolute_menor_aplica {
+    width: 35%;
+  }
+
+  @keyframes chat_esquerdo_absolute_menor_aplica_correndo {
+    0%,
+    30% {
+      width: calc(35% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 35%;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 900px) {
+  .chat_esquerdo_absolute_normal_aplica {
+    width: 40%;
+  }
+
+  @keyframes chat_esquerdo_absolute_normal_aplica_correndo {
+    0%,
+    30% {
+      width: calc(40% / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 40%;
+      opacity: 1;
+    }
+  }
+}
+
+@media (max-width: 648px) {
+  .chat_esquerdo_absolute_normal_aplica {
+    width: 260px;
+  }
+
+  @keyframes chat_esquerdo_absolute_normal_aplica_correndo {
+    0%,
+    30% {
+      width: calc(260px / 2);
+      opacity: 0;
+    }
+    100% {
+      width: 260px;
+      opacity: 1;
+    }
+  }
+}
+
+.tarja_roxa {
+  position: fixed;
+  width: 100%;
+  height: 127px;
+  background: #8a2be2;
+}
+
+.tarja_cinza {
+  position: fixed;
+  top: 127px;
+  width: 100%;
+  height: calc(100% - 127px);
+  background: rgba(25, 24, 31, 0.1);
+}
+
+.chat {
+  display: flex;
+  align-items: stretch;
+  position: absolute;
+  min-width: 648px;
+  min-height: 500px;
+  background: #fff;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.06), 0 2px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+.chat_esquerdo_absolute_normal_aplica {
+  animation: chat_esquerdo_absolute_normal_aplica_correndo 0.17s;
+}
+
+.chat_esquerdo_absolute_menor_aplica {
+  animation: chat_esquerdo_absolute_menor_aplica_correndo 0.17s;
+}

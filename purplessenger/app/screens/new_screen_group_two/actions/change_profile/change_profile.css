@@ -1,0 +1,130 @@
+.alterar_perfil_novo_grupo_tela_dois {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 100%, 0.85);
+  z-index: 200;
+}
+
+.fundo_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+}
+
+@keyframes alterar_perfil_novo_grupo_tela_dois_crescendo {
+  0%,
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  height: 500px;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
+    0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  animation: alterar_perfil_novo_grupo_tela_dois_crescendo 0.3s
+    cubic-bezier(0.1, 0.82, 0.25, 1);
+  z-index: 1;
+}
+
+.menu_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0 20px 0 25px;
+  box-sizing: border-box;
+  width: 100%;
+  height: 49px;
+  border-radius: 3px 3px 0 0;
+  background: #943ce6;
+}
+
+.campo_segura_icone_fechar_no_menu_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-grow: 1;
+}
+
+.icone_fechar_no_campo_segura_icone_fechar_no_menu_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  cursor: pointer;
+}
+
+.icone_tentar_novamente_no_menu_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  cursor: pointer;
+}
+
+.descricao_tentar_novamente_no_menu_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  padding: 0;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  color: #fff;
+  opacity: 0.8;
+  cursor: pointer;
+  user-select: none;
+}
+
+.conteudo_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.img_no_conteudo_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+}
+
+.campo_confirma_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  flex: none;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  width: 100%;
+  height: 70px;
+  border-radius: 0 0 5px 5px;
+  background: #f7f7f7;
+}
+
+.botao_confirma_no_campo_confirma_do_modal_de_confirmar_alterar_perfil_novo_grupo_tela_dois {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: -25px;
+  margin-right: 30px;
+  width: 55px;
+  height: 55px;
+  border: 0;
+  border-radius: 100px;
+  background: #943ce6;
+  cursor: pointer;
+  outline: none;
+}

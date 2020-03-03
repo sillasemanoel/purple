@@ -1,0 +1,847 @@
+@media (min-width: 1441px) {
+  .conversa_com_usuario {
+    width: 70%;
+  }
+
+  .conversa_com_usuario_aplica {
+    width: 45% !important;
+  }
+
+  .file_anexo_icones_menu_conversa_com_usuario_aplica {
+    right: calc(30% + 59px) !important;
+  }
+
+  .modal_opcoes_icones_menu_conversa_com_usuario {
+    right: calc(30% + 22px) !important;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario {
+    width: 70%;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario_aplica {
+    width: 45% !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .conversa_com_usuario {
+    width: 70%;
+  }
+
+  .conversa_com_usuario_aplica {
+    width: 45% !important;
+  }
+
+  .file_anexo_icones_menu_conversa_com_usuario_aplica {
+    right: calc(30% + 59px) !important;
+  }
+
+  .modal_opcoes_icones_menu_conversa_com_usuario_aplica {
+    right: calc(30% + 22px) !important;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario {
+    width: 70%;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario_aplica {
+    width: 45% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .conversa_com_usuario {
+    width: 65%;
+  }
+
+  .conversa_com_usuario_aplica {
+    width: 40% !important;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario {
+    width: 65%;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario_aplica {
+    width: 40% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .conversa_com_usuario_aplica {
+    display: none !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .conversa_com_usuario {
+    width: 60%;
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario {
+    width: 60%;
+  }
+}
+
+@media (max-width: 648px) {
+  .conversa_com_usuario {
+    width: calc(100% - 260px);
+  }
+
+  .pre_visualizar_midia_conversa_com_usuario {
+    width: calc(100% - 260px);
+  }
+}
+
+.conversa_com_usuario {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  background: #fafafa;
+  z-index: 1;
+}
+
+.menu_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  height: 59px;
+  background: #ededed;
+  border-left: 1px solid rgba(0, 0, 0, 0.08);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.campo_perfil_no_menu_conversa_com_usuario {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  padding: 9px 0;
+  min-width: 0;
+  cursor: pointer;
+}
+
+.campo_img_campo_perfil_no_menu_conversa_com_usuario {
+  padding: 0 15px 0 0;
+}
+
+.foto_campo_img_campo_perfil_no_menu_conversa_com_usuario {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #ededed;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.dados_campo_perfil_no_menu_conversa_com_usuario {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.nome_dados_campo_perfil_no_menu_conversa_com_usuario {
+  margin-top: -2px;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.status_dados_campo_perfil_no_menu_conversa_com_usuario {
+  margin-top: 2px;
+  font-size: 13px;
+  color: rgba(0, 0, 0, 0.6);
+  user-select: none;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.icones_menu_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  justify-items: center;
+}
+
+.buscar_icones_menu_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.anexo_icones_menu_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.anexo_icones_menu_conversa_com_usuario_hover {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 8px;
+  background: #e0e0e0;
+  background-image: linear-gradient(180deg, #dddbd1, #d2dbdc);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes anexos_caindo {
+  0%,
+  30% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left top;
+    transform: scale 1, 1;
+    opacity: 1;
+  }
+}
+
+.file_anexo_icones_menu_conversa_com_usuario {
+  position: absolute;
+  top: 73px;
+  right: 59px;
+  cursor: pointer;
+  animation: anexos_caindo 0.2s cubic-bezier(0.1, 0.82, 0.25, 1);
+  z-index: 200;
+}
+
+.opcoes_icones_menu_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 8px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.opcoes_icones_menu_conversa_com_usuario_hover {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  padding: 8px;
+  background: #e0e0e0;
+  background-image: linear-gradient(180deg, #dddbd1, #d2dbdc);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@keyframes modal_opcoes_icones_menu_conversa_com_usuario_crescendo {
+  0%,
+  20% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: right top;
+    transform: scale 1, 1;
+    opacity: 1;
+  }
+}
+
+.modal_opcoes_icones_menu_conversa_com_usuario {
+  padding: 9px 0;
+  position: absolute;
+  top: 52px;
+  right: 22px;
+  width: 175px;
+  height: auto;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  animation: modal_opcoes_icones_menu_conversa_com_usuario_crescendo 0.3s;
+  z-index: 200;
+}
+
+.modal_opcoes_icones_menu_conversa_com_usuario p {
+  margin: 0;
+  padding: 12px 24px;
+  width: calc(100% - 48px);
+  font-size: 14.5px;
+  color: #444;
+  user-select: none;
+  cursor: pointer;
+}
+
+.modal_opcoes_icones_menu_conversa_com_usuario p:hover {
+  background: #f4f4f4;
+}
+
+.pre_visualizar_midia_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 0;
+  height: calc(100% - 59px);
+  z-index: 1;
+}
+
+.menu_pre_visualizar_midia_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 20px 0 25px;
+  box-sizing: border-box;
+  height: 49px;
+  background: #943ce6;
+}
+
+.icone_fechar_menu_pre_visualizar_midia_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  align-items: center;
+  margin-right: 24px;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.descricao_menu_pre_visualizar_midia_conversa_com_usuario {
+  flex-grow: 1;
+  margin-top: -4px;
+  font-size: 19px;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #fff;
+  user-select: none;
+  cursor: text;
+}
+
+.conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 179px);
+  background: rgb(233, 233, 233);
+}
+
+.segura_midia_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  height: 100%;
+}
+
+.img_segura_midia_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  max-width: calc(100% - 40px);
+  max-height: calc(100% - 40px);
+  user-select: none;
+}
+
+.campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0 12.5%;
+  box-sizing: border-box;
+  width: 100%;
+  min-height: 103px;
+}
+
+.campo_descricao_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 23px;
+}
+
+.text_descricao_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  position: relative;
+  left: 2px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.text_descricao_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario_aplcia_js {
+  top: 28px !important;
+  font-size: 16px !important;
+}
+
+@keyframes text_novo_grupo_encolhendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 28px;
+    font-size: 16px;
+  }
+  100% {
+    top: 0;
+    font-size: 12px;
+  }
+}
+
+.text_descricao_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario_aplcia_animacao_encolhe_js {
+  animation: text_novo_grupo_encolhendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+@keyframes text_novo_grupo_crescendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 0;
+    font-size: 12px;
+  }
+  100% {
+    top: 28px;
+    font-size: 16px;
+  }
+}
+
+.text_descricao_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario_aplcia_animacao_cresce_js {
+  animation: text_novo_grupo_crescendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+.segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 44px;
+  border-bottom: 2px solid rgb(148, 60, 230);
+}
+
+.textarea_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding-right: 9px;
+  width: 100%;
+  max-height: 77px;
+  border: 0;
+  background: transparent;
+  font-size: 17px;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  color: #4a4a4a;
+  outline: none;
+  resize: none;
+  overflow-y: overlay;
+  z-index: 1;
+}
+
+.textarea_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario::-webkit-scrollbar {
+  width: 6px !important;
+  height: 0 !important;
+  background: transparent;
+}
+
+.textarea_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.textarea_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+.implementar_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+  margin-right: 7px;
+  height: 30px;
+  background: transparent;
+}
+
+@keyframes x_apaga_textarea_previsualizar_usuario {
+  0%,
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.icone_fechar_implementar_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+  animation: x_apaga_textarea_previsualizar_usuario 0.15s;
+}
+
+.icone_emoji_implementar_segura_textarea_campo_legenda_conteudo_pre_visualizar_midia_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
+  cursor: pointer;
+}
+
+.rodape_pre_visualizar_midia_conversa_com_usuario {
+  flex: 0 0 130px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 24px 20px 0;
+  box-sizing: border-box;
+  background: #d9d9d9;
+}
+
+.botao_rodape_pre_visualizar_midia_conversa_com_usuario {
+  padding: 0;
+  position: absolute;
+  bottom: 99px;
+  right: 40px;
+  border: 0;
+  border-radius: 50%;
+  background: #8a2be2;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+  width: 60px;
+  height: 60px;
+  outline: none;
+  cursor: pointer;
+}
+
+.conteudo_conversa_com_usuario {
+  display: flex;
+  height: 100%;
+  background: #ededed;
+  background-position: 50%;
+  background-size: cover;
+  overflow: hidden;
+}
+
+.papel_parede_conteudo_conversa_com_usuario {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow-y: overlay;
+}
+
+.papel_parede_conteudo_conversa_com_usuario::-webkit-scrollbar {
+  width: 6px !important;
+  height: 0 !important;
+  background: transparent;
+}
+
+.papel_parede_conteudo_conversa_com_usuario::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.papel_parede_conteudo_conversa_com_usuario::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+.linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin: 7px 20px;
+  width: 100%;
+  height: auto;
+}
+
+.triangulo_esquerdo_linha_msg_papel_parede_conteudo_conversa_com_usuario:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  margin-right: -1px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #ffffff;
+  border-bottom: 7px solid transparent;
+  border-right: 6px solid #ffffff;
+  border-left: 6px solid transparent;
+}
+
+.balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  box-sizing: border-box;
+  max-width: 350px;
+  min-width: auto;
+  height: auto;
+  border-radius: 0 6px 6px 6px;
+  background: #ffffff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+.img_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  background-position: 30% 45%;
+  background-size: cover;
+  border-collapse: collapse;
+  cursor: pointer;
+  user-select: none;
+}
+
+.campo_text_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-top: 10px;
+  padding-left: 8px;
+  padding-right: 8px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.text_campo_text_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  padding: 0;
+  font-size: 15px;
+  color: #4b5961;
+}
+
+.campo_dados_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 1px;
+  margin-bottom: 1px;
+  padding-left: 7px;
+  padding-right: 7px;
+  box-sizing: border-box;
+  width: 100%;
+  height: auto;
+}
+
+.hora_campo_dados_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  padding: 0;
+  font-size: 11px;
+  color: #444444;
+  user-select: none;
+}
+
+.triangulo_direito_linha_msg_papel_parede_conteudo_conversa_com_usuario:before {
+  display: none;
+}
+
+/* essa sera a forma que a msg que eu estou enviando estara sendo mostrada  */
+.linha_msg_papel_parede_conteudo_conversa_com_usuario_aplica {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-start;
+  margin: 7px 20px;
+  width: calc(100% - 40px);
+  height: auto;
+}
+
+.triangulo_esquerdo_linha_msg_papel_parede_conteudo_conversa_com_usuario_aplica:before {
+  display: none;
+}
+
+.balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario_aplica {
+  display: flex;
+  flex-direction: column;
+  padding: 3px;
+  box-sizing: border-box;
+  max-width: 350px;
+  min-width: auto;
+  height: auto;
+  border-radius: 6px 0 6px 6px;
+  background: #ffffff;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.08);
+}
+
+.triangulo_direito_linha_msg_papel_parede_conteudo_conversa_com_usuario_aplica:before {
+  content: "";
+  display: inline-block;
+  position: relative;
+  top: -3px;
+  margin-left: -1px;
+  width: 0;
+  height: 0;
+  border-top: 7px solid #fff;
+  border-bottom: 7px solid transparent;
+  border-right: 6px solid transparent;
+  border-left: 6px solid #fff;
+}
+
+.rodape_conversa_com_usuario {
+  display: flex;
+  align-items: flex-end;
+  padding: 5px 9px;
+  box-sizing: border-box;
+  max-width: 100%;
+  background: #f0f0f0;
+}
+
+.campo_emoji_rodape_conversa_com_usuario {
+  display: flex;
+  align-items: center;
+  margin-bottom: 4px;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  height: 42px;
+}
+
+@keyframes aparece_icone_fecha_campo_emoji_rodape_conversa_com_usuario {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.icone_fecha_campo_emoji_rodape_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-right: 15px;
+  cursor: pointer;
+  padding: 1px;
+  width: auto;
+  animation: aparece_icone_fecha_campo_emoji_rodape_conversa_com_usuario 0.3s;
+}
+
+.icone_emoji_campo_emoji_rodape_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  padding: 1px;
+  width: auto;
+}
+
+@keyframes aparece_icone_emoji_campo_emoji_rodape_conversa_com_usuario {
+  0% {
+    transform: translateX(-50px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.icone_emoji_campo_emoji_rodape_conversa_com_usuario_aplica {
+  animation: aparece_icone_emoji_campo_emoji_rodape_conversa_com_usuario 0.3s;
+}
+
+@keyframes aparece_icone_gif_campo_emoji_rodape_conversa_com_usuario {
+  0% {
+    transform: translateX(-90px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.icone_gif_campo_emoji_rodape_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  cursor: pointer;
+  padding: 1px;
+  width: auto;
+  animation: aparece_icone_gif_campo_emoji_rodape_conversa_com_usuario 0.3s;
+}
+
+@keyframes corre_icone_sticker_campo_emoji_rodape_conversa_com_usuario {
+  0% {
+    transform: translateX(-130px);
+    opacity: 0.2;
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+
+.icone_sticker_campo_emoji_rodape_conversa_com_usuario {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 14px;
+  cursor: pointer;
+  padding: 1px;
+  width: auto;
+  animation: corre_icone_sticker_campo_emoji_rodape_conversa_com_usuario 0.3s;
+}
+
+.campo_msg_rodape_conversa_com_usuario {
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+  padding: 9px 12px 11px;
+  box-sizing: border-box;
+  width: 100%;
+  border: 1px solid #fff;
+  border-radius: 21px;
+  background: #fff;
+}
+
+.textarea_campo_msg_rodape_conversa_com_usuario {
+  padding-right: 9px;
+  width: 100%;
+  max-height: 97px;
+  border: 0;
+  background: transparent;
+  font-size: 15px;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  color: #000;
+  outline: none;
+  resize: none;
+  overflow: overlay;
+}
+
+.textarea_campo_msg_rodape_conversa_com_usuario::-webkit-input-placeholder {
+  color: #999;
+}
+
+.textarea_campo_msg_rodape_conversa_com_usuario::-webkit-scrollbar {
+  width: 6px !important;
+  height: 0 !important;
+  background: transparent;
+}
+
+.textarea_campo_msg_rodape_conversa_com_usuario::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.textarea_campo_msg_rodape_conversa_com_usuario::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+.butao_envia_rodape_conversa_com_usuario {
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  position: relative;
+  top: -5px;
+  max-width: 152px;
+  height: 42px;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  outline: none;
+}

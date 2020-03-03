@@ -1,0 +1,88 @@
+.ver_perfil {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 100%, 0.96);
+  z-index: 200;
+}
+
+.menu_ver_perfil {
+  flex: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 10px 16px;
+  box-sizing: border-box;
+  height: 60px;
+  background: #fff;
+  cursor: pointer;
+}
+
+.campo_foto_de_perfil_no_menu_ver_perfil {
+  width: 42px;
+  height: 42px;
+}
+
+.foto_de_perfil_no_menu_ver_perfil {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  background: #ededed;
+  background-position: 50%;
+  background-size: cover;
+  cursor: pointer;
+}
+
+.nome_de_perfil_no_menu_ver_perfil {
+  margin: 0;
+  padding-left: 15px;
+  padding-right: 15px;
+  height: auto;
+  font-size: 17px;
+  line-height: 21px;
+  color: #000;
+  cursor: text;
+  flex-grow: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+}
+
+.icone_fechat_no_menu_ver_perfil {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 8px;
+}
+
+.conteudo_ver_perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  width: 100%;
+  height: 100%;
+}
+
+@keyframes ver_perfil_crescendo {
+  0%,
+  40% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.img_perfil_no_conteudo_ver_perfil {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  user-select: none;
+  animation: ver_perfil_crescendo 0.2s cubic-bezier(0.1, 0.82, 0.25, 1);
+}

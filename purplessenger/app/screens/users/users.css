@@ -1,0 +1,310 @@
+.usuarios {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+.menu_usuarios {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 23px;
+  box-sizing: border-box;
+  height: 108px;
+  color: #fff;
+  background: #943ce6;
+}
+
+@keyframes segura_conteudo_do_menu_usuarios_correndo {
+  0%,
+  30% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.segura_conteudo_menu_usuarios {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 46px);
+  height: 59px;
+  animation: segura_conteudo_do_menu_usuarios_correndo 0.7s
+    cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.icone_voltar_segura_conteudo_menu_usuarios {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 53px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.descricao_segura_conteudo_menu_usuarios {
+  margin-top: -3px;
+  font-size: 19px;
+  font-weight: 500;
+  user-select: none;
+  flex-grow: 1;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+}
+
+.campo_busca_usuarios {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #f8f8f8;
+}
+
+.campo_arredondado_no_campo_busca_usuarios {
+  display: flex;
+  justify-content: flex-start;
+  margin: 0 12px;
+  width: calc(100% - 24px);
+  height: 35px;
+  background: #fff;
+  border-radius: 18px;
+}
+
+.icone_lupa_no_campo_arredondado_no_campo_busca_usuarios {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9px;
+  width: 30px;
+  height: 35px;
+  border-radius: 18px 0 0 18px;
+  cursor: pointer;
+}
+
+@keyframes lupa_usuarios_girando {
+  from {
+    -webkit-transform: rotate(90deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.icone_seta_no_campo_arredondado_no_campo_busca_usuarios {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 9px;
+  width: 30px;
+  height: 35px;
+  border-radius: 18px 0 0 18px;
+  cursor: pointer;
+}
+
+@keyframes seta_do_lupa_usuarios_girando {
+  from {
+    -webkit-transform: rotate(-90deg);
+  }
+  to {
+    -webkit-transform: rotate(0deg);
+  }
+}
+
+.nome_disfarce_de_input_no_campo_arredondado_no_campo_busca_usuarios {
+  margin: 0 17px;
+  padding: 9px 0;
+  width: 100%;
+  font-size: 14px;
+  color: #999;
+  user-select: none;
+  cursor: text;
+  overflow: hidden;
+  position: relative;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.input_no_campo_arredondado_no_campo_busca_usuarios {
+  margin-left: 17px;
+  padding: 8px 0;
+  width: 100%;
+  height: 20px;
+  border: 0;
+  background: transparent;
+  outline: none;
+  font-size: 15px;
+  font-weight: 400;
+  color: #000;
+  line-height: 20px;
+}
+
+.icone_x_no_campo_arredondado_no_campo_busca_chat_usuarios {
+  justify-content: center;
+  align-items: center;
+  padding: 4px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.icone_x_no_campo_arredondado_no_campo_busca_chat_usuarios svg {
+  margin-top: 2px;
+}
+
+.criar_novo_grupo_usuarios {
+  flex: none;
+  display: flex;
+  flex-direction: row;
+  margin-top: -2px;
+  border-bottom: 1px solid #f2f2f2;
+  height: 72px;
+  pointer-events: all;
+  position: relative;
+  cursor: pointer;
+}
+
+.criar_novo_grupo_usuarios:hover {
+  background: #f4f4f4;
+}
+
+.campo_de_representa_criar_novo_grupo_usuarios {
+  flex: none;
+  display: flex;
+  align-items: center;
+  padding: 0 15px 0 13px;
+}
+
+.icone_criar_novo_grupo_no_campo_de_representa_criar_novo_grupo_usuarios {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 48px;
+  width: 48px;
+  background-color: #943ce6;
+  border-radius: 50%;
+}
+
+.campo_de_descricao_criar_novo_grupo_usuarios {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 15px;
+  flex-grow: 1;
+  flex-basis: 0;
+  min-width: 0;
+}
+
+.descricao_no_campo_de_descricao_criar_novo_grupo_usuarios {
+  margin-top: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  user-select: none;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.conteudo_usuarios {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: overlay;
+}
+
+.conteudo_usuarios::-webkit-scrollbar {
+  width: 6px !important;
+  height: 0 !important;
+  background: transparent;
+}
+
+.conteudo_usuarios::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.conteudo_usuarios::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+.campo_descricao_no_conteudo_usuarios {
+  padding: 30px 0 25px 32px;
+}
+
+.campo_descricao_no_conteudo_usuarios span {
+  margin: 0;
+  font-size: 16px;
+  color: #943ce6;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.usuario_no_conteudo_usuarios {
+  display: flex;
+  flex-direction: row;
+  margin-top: -1px;
+  width: 100%;
+  height: 72px;
+  pointer-events: all;
+  position: relative;
+  cursor: pointer;
+}
+
+.usuario_no_conteudo_usuarios:hover {
+  background: #f4f4f4;
+}
+
+.campo_segura_perfil_no_campo_usuarios_no_conteudo_usuarios {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 70px;
+}
+
+.foto_perfil_no_campo_segura_perfil_no_campo_usuarios_no_conteudo_usuarios {
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+  background: #ededed;
+  background-position: 50%;
+  background-size: cover;
+}
+
+.campo_segura_nome_no_campo_usuarios_no_conteudo_usuarios {
+  display: flex;
+  align-items: center;
+  padding-right: 14px;
+  width: calc(100% - 90px);
+  box-sizing: border-box;
+  border-top: 1px solid #f2f2f2;
+}
+
+.nome_usuario_no_campo_segura_nome_no_campo_usuarios_no_conteudo_usuarios {
+  margin-top: 1px;
+  font-size: 17px;
+  font-weight: 400;
+  color: #000;
+  user-select: none;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

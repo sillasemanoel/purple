@@ -1,0 +1,490 @@
+.perfil {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  background: #f7f7f7;
+  z-index: 2;
+}
+
+.menu_perfil {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 23px;
+  box-sizing: border-box;
+  height: 108px;
+  color: #fff;
+  background: #943ce6;
+}
+
+@keyframes segura_conteudo_do_menu_perfil_correndo {
+  0%,
+  30% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.segura_conteudo_menu_perfil {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 46px);
+  height: 59px;
+  animation: segura_conteudo_do_menu_perfil_correndo 0.7s
+    cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.icone_voltar_segura_conteudo_menu_perfil {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 53px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.descricao_segura_conteudo_menu_perfil {
+  margin-top: -3px;
+  font-size: 19px;
+  font-weight: 500;
+  user-select: none;
+  flex-grow: 1;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+}
+
+.fundo_do_modal_das_opcoes_do_que_fazer_ao_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  margin-top: 107px;
+  position: absolute;
+  width: 100%;
+  height: calc(100% - 107px);
+  z-index: 1;
+}
+
+.conteudo_perfil {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  overflow-y: overlay;
+}
+
+.conteudo_perfil::-webkit-scrollbar {
+  width: 6px !important;
+  height: 0 !important;
+  background: transparent;
+}
+
+.conteudo_perfil::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.conteudo_perfil::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+@keyframes foto_de_perfil_crescendo {
+  0%,
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.campo_segura_perfil_no_conteudo_perfil {
+  flex: none;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 28px;
+  margin-top: 28px;
+  transform-origin: center center;
+  animation: foto_de_perfil_crescendo 0.8s cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  min-width: 200px;
+  min-height: 200px;
+  border-radius: 50%;
+  background: #ededed;
+  background-position: 50%;
+  background-size: cover;
+  cursor: pointer;
+  z-index: 1;
+}
+
+.hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 50%;
+}
+
+.hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil:hover {
+  background: hsla(0, 0%, 43%, 0.8);
+}
+
+.icone_camera_no_hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  margin-top: 15px;
+}
+
+.descricao_no_hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  text-align: center;
+  margin-top: 6px;
+  width: 50%;
+  font-size: 13px;
+  color: #f1f2f2;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.sem_hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 43%, 0.8);
+  border-radius: 50%;
+}
+
+.icone_camera_no_sem_hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  margin-top: 15px;
+}
+
+.descricao_no_sem_hover_no_foto_de_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  text-align: center;
+  margin-top: 6px;
+  width: 50%;
+  font-size: 13px;
+  color: #f1f2f2;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+#modal_das_opcoes_do_que_fazer_ao_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  position: fixed;
+  width: 175px;
+  height: auto;
+  background: #fff;
+  border-radius: 3px;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26), 0 2px 10px 0 rgba(0, 0, 0, 0.16);
+  padding: 9px 0;
+  z-index: 200;
+}
+
+@keyframes modal_com_opcoes_de_perfil_crescendo {
+  0%,
+  20% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform-origin: left top;
+    transform: scale 1, 1;
+    opacity: 1;
+  }
+}
+
+.animacao_no_modal_das_opcoes_do_que_fazer_ao_perfil_no_campo_segura_perfil_no_conteudo_perfil {
+  animation: modal_com_opcoes_de_perfil_crescendo 0.3s
+    cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+#modal_das_opcoes_do_que_fazer_ao_perfil_no_campo_segura_perfil_no_conteudo_perfil
+  p {
+  margin: 0;
+  padding: 12px 24px;
+  width: calc(100% - 48px);
+  font-size: 14.5px;
+  color: #444;
+  user-select: none;
+  cursor: pointer;
+}
+
+#modal_das_opcoes_do_que_fazer_ao_perfil_no_campo_segura_perfil_no_conteudo_perfil
+  p:hover {
+  background: #f4f4f4;
+}
+
+@keyframes descer_campos_de_perfil {
+  0%,
+  30% {
+    transform: translateY(-50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.campo_segura_altera_nome_no_conteudo_perfil {
+  margin-bottom: 10px;
+  padding: 13px 30px 11px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  animation: descer_campos_de_perfil 0.9s cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.campo_segura_descricao_no_campo_segura_altera_nome_no_conteudo_perfil {
+  margin-bottom: 14px;
+  position: relative;
+  flex: 1 1 auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.descricao_no_campo_segura_descricao_no_campo_segura_altera_nome_no_conteudo_perfil {
+  color: #943ce6;
+  font-size: 14px;
+  line-height: normal;
+  user-select: none;
+  cursor: text;
+}
+
+.campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.nome_de_usuario_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  margin: 7px 0;
+  min-width: 5px;
+  position: relative;
+  width: 100%;
+  font-size: 17px;
+  line-height: 20px;
+  min-height: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  user-select: none;
+  cursor: text;
+}
+
+.campo_segura_input_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  flex-grow: 1;
+}
+
+.input_no_campo_segura_input_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  margin: 6px 0;
+  width: 100%;
+  border: 0;
+  font-size: 17px;
+  color: #4a4a4a;
+  background: transparent;
+  outline: none;
+}
+
+@keyframes icones_alterar_nome_crescendo {
+  0%,
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.campo_adicionais_para_implementar_ao_input_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  display: flex;
+  padding-top: 8px;
+  background: transparent;
+  animation: icones_alterar_nome_crescendo 0.25s;
+}
+
+.contar_caracteres_do_input_no_campo_adicionais_para_implementar_ao_input_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  margin-left: 5px;
+  margin-right: 3px;
+  text-align: right;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 22px;
+  user-select: none;
+  cursor: text;
+}
+
+.icone_adicionar_emoji_campo_adicionais_para_implementar_ao_input_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  margin-left: 5px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.icone_caneta_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  padding-top: 5px;
+  animation: icones_alterar_nome_crescendo 0.2s;
+  cursor: pointer;
+}
+
+.icone_confirmar_no_campo_segura_acoes_no_campo_segura_altera_nome_no_conteudo_perfil {
+  padding-top: 6px;
+  animation: icones_alterar_nome_crescendo 0.2s;
+  cursor: pointer;
+}
+
+.campo_segura_informacoes_funcionamento_do_nome_de_perfil_no_conteudo_perfil {
+  max-height: 80px;
+  margin: 4px 20px 28px 30px;
+  animation: descer_campos_de_perfil 0.9s cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.campo_segura_informacoes_funcionamento_do_nome_de_perfil_no_conteudo_perfil
+  span {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.45);
+  user-select: none;
+  cursor: text;
+}
+
+.campo_segura_altera_recado_no_conteudo_perfil {
+  margin-bottom: 10px;
+  padding: 13px 30px 11px;
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  animation: descer_campos_de_perfil 0.9s cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.campo_segura_descricao_no_campo_segura_altera_recado_no_conteudo_perfil {
+  margin-bottom: 14px;
+  position: relative;
+  flex: 1 1 auto;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.descricao_no_campo_segura_descricao_no_campo_segura_altera_recado_no_conteudo_perfil {
+  color: #943ce6;
+  font-size: 14px;
+  line-height: normal;
+  user-select: none;
+  cursor: text;
+}
+
+.campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  display: flex;
+  align-items: flex-start;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.recado_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  margin: 7px 0;
+  min-width: 5px;
+  position: relative;
+  width: 100%;
+  font-size: 17px;
+  line-height: 20px;
+  min-height: 20px;
+  user-select: none;
+  cursor: text;
+}
+
+.campo_segura_textarea_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  flex-grow: 1;
+}
+
+.textares_no_campo_segura_textarea_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  margin-top: 5px;
+  margin-bottom: 1px;
+  padding-left: 0;
+  width: 100%;
+  border: 0;
+  font-size: 17px;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  color: #4a4a4a;
+  background: transparent;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+}
+
+.textares_no_campo_segura_textarea_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil::-webkit-scrollbar {
+  width: 0;
+}
+
+@keyframes icones_alterar_recado_crescendo {
+  0%,
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.campo_adicionais_para_implementar_a_textarea_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  display: flex;
+  padding-top: 7px;
+  background: transparent;
+  animation: icones_alterar_recado_crescendo 0.25s;
+}
+
+.contar_caracteres_da_textarea_no_campo_adicionais_para_implementar_a_textarea_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  margin-left: 5px;
+  margin-right: 3px;
+  text-align: right;
+  color: #bbb;
+  font-size: 14px;
+  line-height: 22px;
+  user-select: none;
+  cursor: text;
+  animation: icones_alterar_recado_crescendo 0.25s;
+}
+
+.icone_adicionar_emoji_campo_adicionais_para_implementar_a_textarea_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  margin-left: 5px;
+  margin-right: 3px;
+  cursor: pointer;
+}
+
+.icone_caneta_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  padding-top: 5px;
+  animation: icones_alterar_recado_crescendo 0.2s;
+  cursor: pointer;
+}
+
+.icone_confirmar_no_campo_segura_acoes_no_campo_segura_altera_recado_no_conteudo_perfil {
+  padding-top: 5px;
+  animation: icones_alterar_recado_crescendo 0.2s;
+  cursor: pointer;
+}
+
+.field_that_holds_information_on_how_the_perfil_message_works {
+  min-width: calc(100% - 60px);
+  max-height: 80px;
+  padding: 14px 30px 10px;
+  animation: descer_campos_de_perfil 0.9s cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.field_that_holds_information_on_how_the_perfil_message_works span {
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.45);
+  user-select: none;
+}

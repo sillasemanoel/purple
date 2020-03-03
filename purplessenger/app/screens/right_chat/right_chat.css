@@ -1,0 +1,38 @@
+@media (min-width: 1441px) {
+  .chat_direito {
+    width: 70%;
+  }
+}
+
+@media (max-width: 1440px) {
+  .chat_direito {
+    width: 70%;
+  }
+}
+
+@media (max-width: 900px) {
+  .chat_direito {
+    width: 60%;
+  }
+}
+
+@media (max-width: 648px) {
+  .chat_direito {
+    width: calc(100% - 260px);
+  }
+}
+
+.chat_direito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100% - 5px);
+  background: #fafafa;
+  border-bottom: 5px solid #8a2be2;
+}
+
+.chat_direito img {
+  max-width: 57%;
+  max-height: 57%;
+  user-select: none;
+}

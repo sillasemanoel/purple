@@ -1,0 +1,426 @@
+.fale_conosco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: hsla(0, 0%, 100%, 0.85);
+  z-index: 200;
+}
+
+@keyframes remove_boom_profile_action_box {
+  0%,
+  20% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale 1, 1;
+  }
+}
+
+.modal_fale_conosco {
+  display: flex;
+  flex-direction: column;
+  padding: 22px 24px 20px;
+  box-sizing: border-box;
+  width: 400px;
+  height: auto;
+  max-height: 550px;
+  background: #ffffff;
+  border-radius: 3px;
+  box-shadow: 0 17px 50px 0 rgba(0, 0, 0, 0.19),
+    0 12px 15px 0 rgba(0, 0, 0, 0.24);
+  animation: remove_boom_profile_action_box 0.3s
+    cubic-bezier(0.1, 0.82, 0.25, 1);
+  z-index: 1;
+  overflow-y: overlay;
+}
+
+.modal_fale_conosco::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  background: transparent;
+}
+
+.modal_fale_conosco::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.modal_fale_conosco::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+.titulo_modal_fale_conosco {
+  margin-bottom: 18px;
+  font-size: 20px;
+  font-weight: 400px;
+  user-select: none;
+}
+
+.text_endereco_email_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 23px;
+}
+
+.descricao_text_endereco_email_modal_fale_conosco {
+  position: relative;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.descricao_text_endereco_email_modal_fale_conosco_aplcia_js {
+  top: 28px !important;
+  font-size: 16px !important;
+}
+
+@keyframes text_endereco_email_encolhendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 28px;
+    font-size: 16px;
+  }
+  100% {
+    top: 0px;
+    font-size: 12px;
+  }
+}
+
+.descricao_text_endereco_email_modal_fale_conosco_aplcia_animacao_encolhe_js {
+  animation: text_endereco_email_encolhendo_se_caso_o_input_nao_conter_texto
+    0.2s;
+}
+
+@keyframes text_endereco_email_crescendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 0px;
+    font-size: 12px;
+  }
+  100% {
+    top: 28px;
+    font-size: 16px;
+  }
+}
+
+.descricao_text_endereco_email_modal_fale_conosco_aplcia_animacao_cresce_js {
+  animation: text_endereco_email_crescendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+.campo_endereco_email_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 1px;
+  border-bottom: 2px solid rgb(148, 60, 230);
+}
+
+.input_campo_endereco_email_modal_fale_conosco {
+  margin-top: 2px;
+  margin: 7px 0;
+  width: 100%;
+  border: 0px;
+  font-size: 17px;
+  color: #4a4a4a;
+  background: transparent;
+  outline: none;
+  z-index: 1;
+}
+
+#status_text_endereco_email_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 3px;
+  height: 16px;
+}
+
+.text_confirma_endereco_email_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 23px;
+}
+
+.descricao_text_confirma_endereco_email_modal_fale_conosco {
+  position: relative;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.descricao_text_confirma_endereco_email_modal_fale_conosco_aplcia_js {
+  top: 28px !important;
+  font-size: 16px !important;
+}
+
+@keyframes text_confirma_endereco_email_encolhendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 28px;
+    font-size: 16px;
+  }
+  100% {
+    top: 0px;
+    font-size: 12px;
+  }
+}
+
+.descricao_text_confirma_endereco_email_modal_fale_conosco_aplcia_animacao_encolhe_js {
+  animation: text_confirma_endereco_email_encolhendo_se_caso_o_input_nao_conter_texto
+    0.2s;
+}
+
+@keyframes text_confirma_endereco_email_crescendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 0px;
+    font-size: 12px;
+  }
+  100% {
+    top: 28px;
+    font-size: 16px;
+  }
+}
+
+.descricao_text_confirma_endereco_email_modal_fale_conosco_aplcia_animacao_cresce_js {
+  animation: text_confirma_endereco_email_crescendo_se_caso_o_input_nao_conter_texto
+    0.2s;
+}
+
+.campo_confirma_endereco_email_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 1px;
+  border-bottom: 2px solid rgb(148, 60, 230);
+}
+
+.input_campo_confirma_endereco_email_modal_fale_conosco {
+  margin-top: 2px;
+  margin: 7px 0;
+  width: 100%;
+  border: 0px;
+  font-size: 17px;
+  color: #4a4a4a;
+  background: transparent;
+  outline: none;
+  z-index: 1;
+}
+
+#status_text_confirma_endereco_email_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 3px;
+  height: 16px;
+}
+
+.text_sobre_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 23px;
+}
+
+.descricao_text_sobre_modal_fale_conosco {
+  position: relative;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.descricao_text_sobre_modal_fale_conosco_aplcia_js {
+  top: 28px !important;
+  font-size: 16px !important;
+}
+
+@keyframes text_sobre_encolhendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 28px;
+    font-size: 16px;
+  }
+  100% {
+    top: 0px;
+    font-size: 12px;
+  }
+}
+
+.descricao_text_sobre_modal_fale_conosco_aplcia_animacao_encolhe_js {
+  animation: text_sobre_encolhendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+@keyframes text_sobre_crescendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 0px;
+    font-size: 12px;
+  }
+  100% {
+    top: 28px;
+    font-size: 16px;
+  }
+}
+
+.descricao_text_sobre_modal_fale_conosco_aplcia_animacao_cresce_js {
+  animation: text_sobre_crescendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+.campo_sobre_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 1px;
+  border-bottom: 2px solid rgb(148, 60, 230);
+}
+
+.input_campo_sobre_modal_fale_conosco {
+  margin-top: 2px;
+  margin: 7px 0;
+  width: 100%;
+  border: 0px;
+  font-size: 17px;
+  color: #4a4a4a;
+  background: transparent;
+  outline: none;
+  z-index: 1;
+}
+
+#status_text_sobre_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 3px;
+  height: 16px;
+}
+
+.text_problema_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  height: 23px;
+}
+
+.descricao_text_problema_modal_fale_conosco {
+  position: relative;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.5);
+  user-select: none;
+}
+
+.descricao_text_problema_modal_fale_conosco_aplcia_js {
+  top: 28px !important;
+  font-size: 16px !important;
+}
+
+@keyframes text_problema_encolhendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 28px;
+    font-size: 16px;
+  }
+  100% {
+    top: 0px;
+    font-size: 12px;
+  }
+}
+
+.descricao_text_problema_modal_fale_conosco_aplcia_animacao_encolhe_js {
+  animation: text_problema_encolhendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+@keyframes text_problema_crescendo_se_caso_o_input_nao_conter_texto {
+  0% {
+    top: 0px;
+    font-size: 12px;
+  }
+  100% {
+    top: 28px;
+    font-size: 16px;
+  }
+}
+
+.descricao_text_problema_modal_fale_conosco_aplcia_animacao_cresce_js {
+  animation: text_problema_crescendo_se_caso_o_input_nao_conter_texto 0.2s;
+}
+
+.campo_problema_modal_fale_conosco {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding-top: 1px;
+  border-bottom: 2px solid rgb(148, 60, 230);
+}
+
+.textarea_campo_problema_modal_fale_conosco {
+  margin-top: 2px;
+  margin-top: 7px;
+  margin-bottom: 6px;
+  padding-left: 0px;
+  width: 100%;
+  border: 0px;
+  font-size: 17px;
+  font-family: Segoe UI, Helvetica Neue, Helvetica, Lucida Grande, Arial, Ubuntu,
+    Cantarell, Fira Sans, sans-serif;
+  color: #4a4a4a;
+  background: transparent;
+  outline: none;
+  resize: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.campo_segura_butoons_modal_fale_conosco {
+  display: flex;
+  flex-wrap: wrap-reverse;
+  justify-content: flex-end;
+  overflow: hidden;
+  white-space: nowrap;
+  padding: 50px 5px 0;
+}
+
+.butoon_cancelar_campo_segura_butoons_modal_fale_conosco {
+  margin-bottom: 5px;
+  padding: 10px 24px;
+  border-radius: 3px;
+  border: 0px;
+  background: transparent;
+  font-size: 14px;
+  color: #943ce6;
+  text-transform: uppercase;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.butoon_cancelar_campo_segura_butoons_modal_fale_conosco:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.butoon_remover_campo_segura_butoons_modal_fale_conosco {
+  margin-left: 4px;
+  margin-bottom: 5px;
+  padding: 10px 24px;
+  border-radius: 3px;
+  border: 0px;
+  background: #943ce6;
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  user-select: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.butoon_remover_campo_segura_butoons_modal_fale_conosco:hover {
+  box-shadow: -3px 3px 5px rgba(0, 0, 0, 0.2);
+  background: #9649df;
+}

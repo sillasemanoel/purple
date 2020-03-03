@@ -1,0 +1,134 @@
+.papel_de_parede {
+  flex: none;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  height: 100%;
+  background: #fff;
+  z-index: 1;
+}
+
+.menu_papel_de_parede {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+  padding: 0 23px;
+  box-sizing: border-box;
+  height: 108px;
+  color: #fff;
+  background: #943ce6;
+}
+
+@keyframes segura_conteudo_do_menu_papel_de_parede_correndo {
+  0%,
+  30% {
+    transform: translateX(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.segura_conteudo_menu_papel_de_parede {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  width: calc(100% - 46px);
+  height: 59px;
+  animation: segura_conteudo_do_menu_papel_de_parede_correndo 0.7s
+    cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.icone_voltar_segura_conteudo_menu_papel_de_parede {
+  flex: none;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 53px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.descricao_segura_conteudo_menu_papel_de_parede {
+  margin-top: -3px;
+  font-size: 19px;
+  font-weight: 500;
+  user-select: none;
+  flex-grow: 1;
+  line-height: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: text;
+}
+
+.conteudo_papel_de_parede {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding-top: 30px;
+  padding-left: 10px;
+  padding-right: 30px;
+  height: auto;
+  overflow-y: overlay;
+}
+
+.conteudo_papel_de_parede::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  background: transparent;
+}
+
+.conteudo_papel_de_parede::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.conteudo_papel_de_parede::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+@keyframes cor_cresce {
+  0%,
+  20% {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.cor_conteudo_papel_de_parede {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 15px;
+  margin-bottom: 15px;
+  width: 82px;
+  height: 82px;
+  box-sizing: border-box;
+  font-size: 12px;
+  user-select: none;
+  transform-origin: left top;
+  animation: cor_cresce 1s cubic-bezier(0.1, 0.82, 0.25, 1);
+}
+
+.cor_conteudo_papel_de_parede:hover {
+  border: 4px solid #fff;
+  cursor: pointer;
+}
+
+.selecionada_cor_conteudo_papel_de_parede {
+  border: 3px solid #00a5f4 !important;
+  box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.08);
+}
+
+.responsiva_cor_conteudo_papel_de_parede {
+  margin-left: 15px;
+  width: 82px;
+  height: 0;
+}

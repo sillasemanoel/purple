@@ -1,0 +1,149 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+
+body::-webkit-scrollbar {
+  width: 6px !important;
+  height: 6px !important;
+  background: transparent;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+body::-webkit-scrollbar-track {
+  background: hsla(0, 0%, 100%, 0.08);
+}
+
+@font-face {
+  font-family: coolvetica;
+  src: url("../fonts/coolvetica/coolveticarg.ttf");
+}
+
+.conteudo_tela_de_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 350px;
+}
+
+.caixa_de_login_conteudo_tela_de_login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 350px;
+  height: 300px;
+}
+
+.campo_logo_campo_logo_caixa_de_login_conteudo_tela_de_login_caixa_de_login_conteudo_tela_de_login {
+  margin-top: 20px;
+  height: auto;
+  user-select: none;
+}
+
+.logo_campo_logo_caixa_de_login_conteudo_tela_de_login {
+  font-family: coolvetica;
+  font-size: 44px;
+  font-weight: 550;
+  color: #8a2be2;
+  cursor: pointer;
+}
+
+.email_caixa_de_login_conteudo_tela_de_login {
+  margin-top: 40px;
+  padding-left: 10px;
+  width: 80%;
+  height: 29px;
+  border-radius: 5px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+  user-select: none;
+}
+
+.senha_caixa_de_login_conteudo_tela_de_login {
+  margin-top: 20px;
+  padding-left: 10px;
+  width: 80%;
+  height: 29px;
+  border-radius: 5px;
+  border: 1px solid #b5b5b5;
+  outline: none;
+  user-select: none;
+}
+
+.acoes_caixa_de_login_conteudo_tela_de_login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.esquece_senha_acoes_caixa_de_login_conteudo_tela_de_login {
+  margin-right: 30px;
+  text-decoration: none;
+  color: #1c1c1c;
+  font-family: arial;
+  font-size: 13px;
+  user-select: none;
+}
+
+.butoon_entrar_acoes_caixa_de_login_conteudo_tela_de_login {
+  width: 90px;
+  height: 30px;
+  background: #8a2be2;
+  border: 0px;
+  border-radius: 5px;
+  font-family: arial;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+
+.responsavel_conteudo_tela_de_login {
+  display: flex;
+  justify-content: flex-end;
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  width: auto;
+  height: auto;
+}
+
+.publicado_responsavel_conteudo_tela_de_login {
+  position: relative;
+  top: 1px;
+  margin-right: 5px;
+  font-family: arial;
+  font-size: 13px;
+  color: #333;
+  cursor: pointer;
+  user-select: none;
+  text-decoration: none;
+}
+
+.nome_responsavel_conteudo_tela_de_login {
+  font-family: arial;
+  font-size: 15px;
+  color: #8a2be2;
+  font-weight: 700;
+  cursor: pointer;
+  user-select: none;
+}
+
+.foto_responsavel_conteudo_tela_de_login {
+  width: 20px;
+  height: 20px;
+  padding: 0px;
+  margin-left: 10px;
+  background-position: 50%;
+  background-size: cover;
+  border-collapse: collapse;
+  border-radius: 3px;
+  cursor: pointer;
+  user-select: none;
+}

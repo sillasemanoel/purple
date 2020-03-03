@@ -1,0 +1,23 @@
+chat(pae) OK
+chat esquerdo OK
+chat direito OK
+perfil OK
+    |
+    --- ver perfil OK
+    --- carregar foto OK
+    --- remover foto OK
+usuarios OK
+novo grupo tela um OK
+novo grupo tela dois OK
+    |
+    --- carregar foto OK
+    --- remover foto OK
+configuracoes OK
+papel de parede OK
+ajuda OK
+    |
+    --- fale conosco OK
+conversa com usuario OK
+    |
+    --- visualizar midia
+dados do usuario
