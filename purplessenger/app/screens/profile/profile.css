@@ -1,3 +1,57 @@
+@media (min-width: 1441px) {
+  .perfil {
+    width: 30%;
+  }
+
+  .perfil_aplica {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .perfil {
+    width: 30%;
+  }
+
+  .perfil_aplica {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .perfil {
+    width: 35%;
+  }
+
+  .perfil_aplica {
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .perfil_aplica {
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .perfil {
+    width: 40%;
+  }
+}
+
+@media (max-width: 720px) {
+  .perfil {
+    width: 40%;
+  }
+}
+
+@media (max-width: 648px) {
+  .perfil {
+    width: 260px;
+  }
+}
+
 .perfil {
   flex: none;
   display: flex;

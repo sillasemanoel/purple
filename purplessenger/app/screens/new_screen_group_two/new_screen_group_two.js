@@ -7,7 +7,9 @@ $(document).ready(function() {
         ".foto_de_novo_grupo_tela_dois_no_campo_segura_novo_grupo_tela_dois_no_conteudo_novo_grupo_tela_dois"
       ).css("background-image", "url(" + "" + ")");
       $(".input_recebe_foto_que_sera_aplicada_ao_novo_grupo_tela_dois").val("");
-      $(".input_no_campo_nome_do_grupo_no_conteudo_novo_grupo_tela_dois").val("");
+      $(".input_no_campo_nome_do_grupo_no_conteudo_novo_grupo_tela_dois").val(
+        ""
+      );
       $(
         ".descricao_no_text_nome_do_grupo_no_conteudo_novo_grupo_tela_dois"
       ).addClass(

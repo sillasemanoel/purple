@@ -324,7 +324,6 @@
 }
 
 .descricao_menu_pre_visualizar_midia_conversa_com_usuario {
-  flex-grow: 1;
   margin-top: -4px;
   font-size: 19px;
   line-height: normal;
@@ -604,7 +603,7 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 6px;
   padding-left: 8px;
   padding-right: 8px;
   box-sizing: border-box;
@@ -636,6 +635,18 @@
   font-size: 11px;
   color: #444444;
   user-select: none;
+}
+
+.status_msg_enviada_no_campo_dados_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  margin-left: 4px;
+}
+
+.status_msg_recebida_no_campo_dados_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  margin-left: 4px;
+}
+
+.status_msg_lida_no_campo_dados_balao_msg_linha_msg_papel_parede_conteudo_conversa_com_usuario {
+  margin-left: 4px;
 }
 
 .triangulo_direito_linha_msg_papel_parede_conteudo_conversa_com_usuario:before {

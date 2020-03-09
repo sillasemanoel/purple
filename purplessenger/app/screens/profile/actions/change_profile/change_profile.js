@@ -5,6 +5,7 @@ $(document).ready(function() {
   ).click(function() {
     $("body").removeAttr("style", "overflow");
     $(".alterar_perfil").fadeOut(0);
+    $(".input_recebe_foto_que_sera_aplicada_ao_perfil").val("");
   });
 
   // click na opcao de tentar novamente pra escolher outra foto

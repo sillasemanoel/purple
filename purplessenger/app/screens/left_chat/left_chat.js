@@ -2,7 +2,7 @@ $(document).ready(function() {
   // abrindo tela de perfil
   $(".foto_perfil_no_menu_chat_esquerdo, .opcao_perfil_chat_esquerdo").click(
     function() {
-      $(".perfil").fadeIn(0);
+      $(".perfil").animate({ width: "toggle" }, 170);
       $(".campo_segura_altera_nome_no_conteudo_perfil").fadeIn(0);
       $(
         ".campo_segura_informacoes_funcionamento_do_nome_de_perfil_no_conteudo_perfil"
@@ -15,7 +15,7 @@ $(document).ready(function() {
   // abrindo tela de buscar usuarios
   $(".icone_entra_na_tela_usuarios_segura_icones_menu_chat_esquerdo").click(
     function() {
-      $(".usuarios").fadeIn(0);
+      $(".usuarios").animate({ width: "toggle" }, 170);
       $(".conteudo_usuarios").animate({ scrollTop: 0 }, 0);
     }
   );
@@ -48,7 +48,7 @@ $(document).ready(function() {
 
   // clicando na opcao de novo grupo para abrir tela de novo grupo
   $(".opcao_novo_grupo_chat_esquerdo").click(function() {
-    $(".novo_grupo_tela_um").fadeIn(0);
+    $(".novo_grupo_tela_um").animate({ width: "toggle" }, 170);
     $(".conteudo_novo_grupo_tela_um").animate({ scrollTop: 0 }, 0);
     $(
       ".input_de_busca_no_segura_responsivamente_no_campo_segura_pessoas_selecionadas_busca_novo_grupo_tela_um"
@@ -57,7 +57,7 @@ $(document).ready(function() {
 
   // clicando na opcao de configuracoes para abrir tela de configuracoes
   $(".opcao_configuracoes_chat_esquerdo").click(function() {
-    $(".configuracao").fadeIn(0);
+    $(".configuracao").animate({ width: "toggle" }, 170);
     $(".conteudo_configuracao").animate({ scrollTop: 0 }, 0);
   });
 

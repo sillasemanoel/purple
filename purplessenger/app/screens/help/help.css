@@ -1,3 +1,57 @@
+@media (min-width: 1441px) {
+  .ajuda {
+    width: 30%;
+  }
+
+  .ajuda_aplica {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 1440px) {
+  .ajuda {
+    width: 30%;
+  }
+
+  .ajuda_aplica {
+    width: 25% !important;
+  }
+}
+
+@media (max-width: 1300px) {
+  .ajuda {
+    width: 35%;
+  }
+
+  .ajuda_aplica {
+    width: 30% !important;
+  }
+}
+
+@media (max-width: 1024px) {
+  .ajuda_aplica {
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .ajuda {
+    width: 40%;
+  }
+}
+
+@media (max-width: 720px) {
+  .ajuda {
+    width: 40%;
+  }
+}
+
+@media (max-width: 648px) {
+  .ajuda {
+    width: 260px;
+  }
+}
+
 .ajuda {
   flex: none;
   display: flex;

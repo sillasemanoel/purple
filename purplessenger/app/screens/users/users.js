@@ -152,7 +152,7 @@ $(document).ready(function() {
 
   // clicando no campo de criar um novo grupo
   $(".criar_novo_grupo_usuarios").click(function() {
-    $(".novo_grupo_tela_um").fadeIn(0);
+    $(".novo_grupo_tela_um").animate({ width: "toggle" }, 170);
     $(".conteudo_novo_grupo_tela_um").animate({ scrollTop: 0 }, 0);
     $(
       ".input_de_busca_no_segura_responsivamente_no_campo_segura_pessoas_selecionadas_busca_novo_grupo_tela_um"
@@ -161,6 +161,7 @@ $(document).ready(function() {
 
   // clicando no campo de usuario para poder conversar
   $(".usuario_no_conteudo_usuarios").click(function() {
-    $(".usuarios").fadeIn(0);
+    $(".usuarios").animate({ width: "toggle" }, 170);
+    $(".conversa_com_usuario").fadeIn(0);
   });
 });

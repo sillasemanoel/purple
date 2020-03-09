@@ -4,8 +4,8 @@ chat direito OK
 perfil OK
     |
     --- ver perfil OK
-    --- carregar foto OK
-    --- remover foto OK
+    --- carregar foto
+    --- remover foto
 usuarios OK
 novo grupo tela um OK
 novo grupo tela dois OK
@@ -17,7 +17,7 @@ papel de parede OK
 ajuda OK
     |
     --- fale conosco OK
-conversa com usuario OK
+conversa com usuario AQUI
     |
     --- visualizar midia
 dados do usuario

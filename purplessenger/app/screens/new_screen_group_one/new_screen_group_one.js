@@ -154,7 +154,7 @@ $(document).ready(function() {
 
   // clicando em button de ir para proxima tela de criar grupo
   $(".button_confirma_novo_grupo_tela_um").click(function() {
-    $(".novo_grupo_tela_dois").fadeIn(0);
+    $(".novo_grupo_tela_dois").animate({ width: "toggle" }, 170);
     $(
       ".input_de_busca_no_segura_responsivamente_no_campo_segura_pessoas_selecionadas_busca_novo_grupo_tela_um"
     ).val("");

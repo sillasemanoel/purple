@@ -3,14 +3,26 @@ $(document).ready(function() {
   $(".campo_perfil_no_menu_conversa_com_usuario").click(function() {
     $(".dados_usuario").fadeIn(0);
     $(".chat_esquerdo").addClass("chat_esquerdo_aplica");
-    $(".modal_com_opcoes_menu_chat_esquerdo").addClass("modal_com_opcoes_menu_chat_esquerdo_aplica");
-    $(".perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda").removeClass("chat_esquerdo_absolute_normal_aplica");
-    $(".perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda").addClass("chat_esquerdo_absolute_menor_aplica");
+    $(".modal_com_opcoes_menu_chat_esquerdo").addClass(
+      "modal_com_opcoes_menu_chat_esquerdo_aplica"
+    );
+    $(
+      ".perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda"
+    ).removeClass("chat_esquerdo_absolute_normal_aplica");
+    $(
+      ".perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda"
+    ).addClass("chat_esquerdo_absolute_menor_aplica");
     $(".conversa_com_usuario").addClass("conversa_com_usuario_aplica");
-    $(".file_anexo_icones_menu_conversa_com_usuario").addClass("file_anexo_icones_menu_conversa_com_usuario_aplica");
-    $(".modal_opcoes_icones_menu_conversa_com_usuario").addClass("modal_opcoes_icones_menu_conversa_com_usuario_aplica");
-    $(".pre_visualizar_midia_conversa_com_usuario").addClass("pre_visualizar_midia_conversa_com_usuario_aplica");
-});
+    $(".file_anexo_icones_menu_conversa_com_usuario").addClass(
+      "file_anexo_icones_menu_conversa_com_usuario_aplica"
+    );
+    $(".modal_opcoes_icones_menu_conversa_com_usuario").addClass(
+      "modal_opcoes_icones_menu_conversa_com_usuario_aplica"
+    );
+    $(".pre_visualizar_midia_conversa_com_usuario").addClass(
+      "pre_visualizar_midia_conversa_com_usuario_aplica"
+    );
+  });
 
   // clicando em icone de anexo
   $(".anexo_icones_menu_conversa_com_usuario").click(function() {
@@ -21,7 +33,7 @@ $(document).ready(function() {
 
   // fechando as opcoes abertas de anexo
   $(
-    ".tarja_roxa, .tarja_cinza, .anexo_icones_menu_conversa_com_usuario_hover, .campo_perfil_no_menu_conversa_com_usuario, .buscar_icones_menu_conversa_com_usuario, .opcoes_icones_menu_conversa_com_usuario, .conteudo_conversa_com_usuario, .rodape_conversa_com_usuario, .chat_esquerdo, .perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda"
+    ".tarja_roxa, .tarja_cinza, .anexo_icones_menu_conversa_com_usuario_hover, .campo_perfil_no_menu_conversa_com_usuario, .buscar_icones_menu_conversa_com_usuario, .opcoes_icones_menu_conversa_com_usuario, .conteudo_conversa_com_usuario, .pre_visualizar_midia_conversa_com_usuario, .rodape_conversa_com_usuario, .chat_esquerdo, .perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda"
   ).click(function() {
     $(".anexo_icones_menu_conversa_com_usuario_hover").fadeOut(0);
     $(".anexo_icones_menu_conversa_com_usuario").fadeIn(0);
@@ -70,7 +82,7 @@ $(document).ready(function() {
 
   // fechando o modal com opcoes
   $(
-    ".tarja_roxa, .tarja_cinza, .opcoes_icones_menu_conversa_com_usuario_hover, .campo_perfil_no_menu_conversa_com_usuario, .buscar_icones_menu_conversa_com_usuario, .anexo_icones_menu_conversa_com_usuario, .conteudo_conversa_com_usuario, .rodape_conversa_com_usuario, .chat_esquerdo, .perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda"
+    ".tarja_roxa, .tarja_cinza, .opcoes_icones_menu_conversa_com_usuario_hover, .campo_perfil_no_menu_conversa_com_usuario, .buscar_icones_menu_conversa_com_usuario, .anexo_icones_menu_conversa_com_usuario, .conteudo_conversa_com_usuario, .pre_visualizar_midia_conversa_com_usuario, .rodape_conversa_com_usuario, .chat_esquerdo, .perfil, .usuarios, .novo_grupo_tela_um, .novo_grupo_tela_dois, .configuracao, .papel_de_parede, .ajuda"
   ).click(function() {
     $(".opcoes_icones_menu_conversa_com_usuario_hover").fadeOut(0);
     $(".opcoes_icones_menu_conversa_com_usuario").fadeIn(0);

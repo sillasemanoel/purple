@@ -16,5 +16,6 @@ $(document).ready(function() {
     $(
       ".foto_de_novo_grupo_tela_dois_no_campo_segura_novo_grupo_tela_dois_no_conteudo_novo_grupo_tela_dois"
     ).css("background-image", "url(" + "" + ")");
+    $(".input_recebe_foto_que_sera_aplicada_ao_novo_grupo_tela_dois").val("");
   });
 });
